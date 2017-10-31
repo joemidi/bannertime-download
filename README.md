@@ -1,6 +1,6 @@
 # bannertime-download
 
-Adding a JSZIP download method
+Its Duncan Bannertime!
 
 
 ## Usage

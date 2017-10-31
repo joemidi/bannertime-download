@@ -11,8 +11,8 @@ var plumber = require('gulp-plumber');
 gulp.task('images', function() {
   return gulp.src(config.tasks.images.src)
     .pipe(plumber({ errorHandler: handleErrors }))
-    .pipe(changed(config.tasks.images.dest))
     .pipe(imagemin())
+    .pipe(changed(config.tasks.images.dest))
     .pipe(gulp.dest(config.tasks.images.dest))
     .pipe(browserSync.stream());
 });
